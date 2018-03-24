@@ -1,0 +1,5 @@
+<!--pages/getCode/index.wxml-->
+<view class='row'>
+  <view class='h1'>获取code</view>
+  <view class='p gloo'>code:{{code}}</view>
+</view>

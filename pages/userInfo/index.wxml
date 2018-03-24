@@ -1,0 +1,22 @@
+<!--pages/userInfo/index.wxml-->
+<view class='row'>
+  <view class='h1'>获取用户信息</view>
+  <view class='p'>
+    signature:
+    <view class='gloo'>{{userInfo.signature}}</view>
+    userInfo.nickName:
+    <view class='gloo'>{{userInfo.userInfo.nickName}}</view>
+    userInfo.gender:
+    <view class='gloo'>{{userInfo.userInfo.gender}}</view>
+    userInfo.language:
+    <view class='gloo'>{{userInfo.userInfo.language}}</view>
+    userInfo.city:
+    <view class='gloo'>{{userInfo.userInfo.city}}</view>
+    userInfo.province:
+    <view class='gloo'>{{userInfo.userInfo.province}}</view>
+    userInfo.country:
+    <view class='gloo'>{{userInfo.userInfo.country}}</view>
+    userInfo.avatarUrl:
+    <text class='gloo'>{{userInfo.userInfo.avatarUrl}}</text>
+  </view>
+</view>

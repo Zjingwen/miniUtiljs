@@ -1,0 +1,26 @@
+/**app.wxss**/
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 10rpx;
+  box-sizing: border-box;
+}
+navigator{
+  width: 100%;
+}
+.h1{
+  font-size: 48rpx;
+}
+.p{
+  font-size: 32rpx;
+}
+.row{
+  padding: 20rpx;
+  word-break:break-all; 
+}
+.gloo{
+  color: #999;
+}

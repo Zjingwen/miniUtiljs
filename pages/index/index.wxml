@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class='container'>
+<navigator url='/pages/getCode/index'>
+  <button type="default" >获取用户code</button>
+</navigator>
+</view>
+<view class='container'>
+<navigator url='/pages/userInfo/index'>
+  <button type="default" >获取用户信息</button>
+</navigator>
+</view>
