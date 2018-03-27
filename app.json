@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/getCode/index",
-    "pages/userInfo/index"
+    "pages/userInfo/index",
+    "pages/getLocation/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

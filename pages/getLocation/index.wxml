@@ -1,0 +1,12 @@
+<!--pages/getLocation/index.wxml-->
+<view class='row'>
+  <view class='h1'>获取当前的地理位置、速度</view>
+  <view class='p'>latitude:{{location.latitude}}</view>
+  <view class='p'>longitude:{{location.longitude}}</view>
+  <view class='p'>speed:{{location.speed}}</view>
+  <view class='p'>accuracy:{{location.accuracy}}</view>
+  <view class='p'>altitude:{{location.altitude}}</view>
+  <view class='p'>verticalAccuracy:{{location.verticalAccuracy}}</view>
+  <view class='p'>horizontalAccuracy:{{location.horizontalAccuracy}}</view>
+  <view class='p'>errMsg:{{location.errMsg}}</view>
+</view>
