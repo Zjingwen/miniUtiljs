@@ -1,9 +1,9 @@
 import getCode from "getCode.js";
 import hasCheckSession from "hasCheckSession.js";
-import getUserInfo from "getUserInfo.js";
+import getSetting from "getSetting.js";
 
 export default {
   getCode: getCode,
   hasCheckSession: hasCheckSession,
-  getUserInfo: getUserInfo,
+  getSetting: getSetting,
 };
