@@ -1,11 +1,21 @@
 <!--index.wxml-->
 <view class='container'>
-<navigator url='/pages/getCode/index'>
-  <button type="default" >获取用户code</button>
-</navigator>
+  <navigator url='/pages/getCode/index'>
+    <button type="default" >获取用户code</button>
+  </navigator>
 </view>
 <view class='container'>
-<navigator url='/pages/userInfo/index'>
-  <button type="default" >获取用户信息</button>
-</navigator>
+  <navigator url='/pages/userInfo/index'>
+    <button type="default" >获取用户信息</button>
+  </navigator>
+</view>
+<view class='container'>
+  <navigator url='/pages/getLocation/index'>
+    <button type="default" >获取用户当前坐标</button>
+  </navigator>
+</view>
+<view class='container'>
+  <navigator url='/pages/chooseLocation/index'>
+    <button type="default" >打开地图选择位置</button>
+  </navigator>
 </view>

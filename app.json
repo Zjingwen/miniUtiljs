@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/getCode/index",
     "pages/userInfo/index",
-    "pages/getLocation/index"
+    "pages/getLocation/index",
+    "pages/chooseLocation/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

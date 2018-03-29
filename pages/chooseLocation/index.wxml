@@ -1,0 +1,9 @@
+<!--pages/chooseLocation/index.wxml-->
+<view class="row">
+    <view class="h1">打开地图选择位置</view>
+    <view class="p">address:{{location.address}}</view>
+    <view class="p">errMsg:{{location.errMsg}}</view>
+    <view class="p">latitude:{{location.latitude}}</view>
+    <view class="p">longitude:{{location.longitude}}</view>
+    <view class="p">name:{{location.name}}</view>
+</view>
