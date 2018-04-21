@@ -19,3 +19,8 @@
     <button type="default" >打开地图选择位置</button>
   </navigator>
 </view>
+<view class='container'>
+  <navigator url='/pages/chooseAddress/index'>
+    <button type="default" >编辑收货地址</button>
+  </navigator>
+</view>
