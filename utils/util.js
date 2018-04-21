@@ -4,6 +4,7 @@ import getSetting from "getSetting.js";
 import getLocation from "getLocation.js";
 import chooseLocation from "chooseLocation.js";
 import chooseAddress from "chooseAddress.js";
+import chooseInvoiceTitle from "chooseInvoiceTitle.js";
 
 export default {
   getCode,
@@ -11,5 +12,6 @@ export default {
   getSetting,
   getLocation,
   chooseLocation,
-  chooseAddress
+  chooseAddress,
+  chooseInvoiceTitle
 };
