@@ -24,3 +24,13 @@
     <button type="default" >编辑收货地址</button>
   </navigator>
 </view>
+<view class='container'>
+  <navigator url='/pages/chooseInvoiceTitle/index'>
+    <button type="default" >发票抬头</button>
+  </navigator>
+</view>
+<view class='container'>
+  <navigator url='/pages/getWeRunData/index'>
+    <button type="default" >微信运动</button>
+  </navigator>
+</view>

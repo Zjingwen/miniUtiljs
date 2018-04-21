@@ -6,7 +6,8 @@
     "pages/getLocation/index",
     "pages/chooseLocation/index",
     "pages/chooseAddress/index",
-    "pages/chooseInvoiceTitle/index"
+    "pages/chooseInvoiceTitle/index",
+    "pages/getWeRunData/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
