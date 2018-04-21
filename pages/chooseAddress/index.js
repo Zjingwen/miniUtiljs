@@ -31,7 +31,7 @@ Page({
     
   },
   chooseAddress: function () {
-    util.chooseAddress().then(res=>{
+    util.getSetting('scope.address').then(res=>{
       console.log(res);
     });
   },

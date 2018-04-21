@@ -1,8 +1,10 @@
 import getUserInfo from './getUserInfo.js';
 import openSetting from './openSetting.js';
+import chooseAddress from './chooseAddress.js';
 
 const SETTING = {
-  'scope.userInfo': getUserInfo
+  'scope.userInfo': getUserInfo,
+  'scope.address': chooseAddress
 }
 
 

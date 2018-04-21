@@ -12,26 +12,14 @@
 import openSetting from "./openSetting.js";
 
 export default () => {
-    function chooseAddress(){
-        return new Promise((resolve,reject)=>{
-            wx.chooseAddress({
-                success(res){
-                    resolve(res);
-                },
-                fail(res){
-                    resolve(res);
-                }
-            })
+    return new Promise((resolve,reject)=>{
+        wx.chooseAddress({
+            success(res){
+                resolve(res);
+            },
+            fail(res){
+                resolve(res);
+            }
         })
-    }
-
-    return chooseAddress().then(res=>{
-        if(res.errMsg.indexOf('fail') >-1 ){
-            return openSetting().then(res=>{
-                return chooseAddress();
-            })
-        }else{
-            return res;
-        }
     })
 }
