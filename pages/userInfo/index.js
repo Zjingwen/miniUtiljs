@@ -20,12 +20,28 @@ Page({
    * 获取用户信息
    */
   getSetting: function () {
-    let seft = this;
-    util.getSetting('scope.userInfo').then(res => {
-      console.log(res);
+    let reLogin = (res)=>{
+      return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+          resolve();
+        },2000);
+      })
+    }
+    
+    function setData(res){
       this.setData({
         'userInfo': res
       })
+    }
+
+    util.setSetting('scope.userInfo',reLogin)
+    .then(res => {
+      //用户允许授权
+      setData.call(this,res);
+
+    }).catch(res=>{
+      //setSetting:no用户拒绝授权
+      console.log(res);
     });
   },
   /**

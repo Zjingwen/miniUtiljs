@@ -6,6 +6,7 @@ import chooseLocation from "chooseLocation.js";
 import chooseAddress from "chooseAddress.js";
 import chooseInvoiceTitle from "chooseInvoiceTitle.js";
 import getWeRunData from "getWeRunData.js";
+import setSetting from "setSetting.js";
 
 export default {
   getCode,
@@ -15,5 +16,6 @@ export default {
   chooseLocation,
   chooseAddress,
   chooseInvoiceTitle,
-  getWeRunData
+  getWeRunData,
+  setSetting
 };

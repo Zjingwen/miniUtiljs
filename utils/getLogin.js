@@ -1,16 +1,13 @@
 export default ()=>{
-
   return new Promise((resolve,reject)=>{
-
-    wx.checkSession({
+    wx.login({
+      timeout: 3000,
       success(res) {
-        resolve(res.errMsg);
+        resolve(res);
       },
       fail(res) {
-        resolve(res.errMsg);
+        reject(res);
       }
     });
-
-  });
-
-};
+  })
+}
