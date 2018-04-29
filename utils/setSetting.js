@@ -1,5 +1,4 @@
 import hasCheckSession from './hasCheckSession.js';
-import openSetting from './openSetting.js';
 import getLogin from './getLogin.js';
 import getSetting from './getSetting';
 import showModal from './showModal.js';
@@ -33,24 +32,21 @@ export default (strName, reLogin) => {
         }
 
     }).then(res => {
-
+        
         if (res == undefined) {
             return getSetting().then(res => {
                 return SETTING[strName]();
             });
-        } else {
-            return SETTING[strName]();
         }
+        
+        return SETTING[strName]();
+            
     }).then(res => {
-
-        let errMsg = res.errMsg.split(':')[1];
-
-        if (errMsg == 'ok') {
-            return res;
-        } else {
+        if(res.errMsg.indexOf('fail') > -1){
             return new Promise((resolve,reject)=>{
-                reject('setSetting:no')
-            })
-        }
+                reject(res);
+            });
+        };
+        return res;
     })
 }

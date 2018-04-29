@@ -20,8 +20,10 @@ Page({
    * 获取用户信息
    */
   getSetting: function () {
-    let reLogin = (res)=>{
+
+    function reLogin(res){
       return new Promise((resolve,reject)=>{
+        
         setTimeout(()=>{
           resolve();
         },2000);
@@ -37,11 +39,22 @@ Page({
     util.setSetting('scope.userInfo',reLogin)
     .then(res => {
       //用户允许授权
+      console.log(res);
       setData.call(this,res);
 
     }).catch(res=>{
-      //setSetting:no用户拒绝授权
-      console.log(res);
+      //不允许授权
+      util.openSetting().then(res=>{
+
+        if(res.authSetting['scope.userInfo']){
+          util.setSetting('scope.userInfo').then(res=>{
+            setData.call(this,res);
+          })
+
+          return ''
+        };
+        console.log(res);
+      });
     });
   },
   /**
